@@ -191,6 +191,6 @@ Contributions are welcome! Follow these steps to contribute:
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: rahulsingh654932@gmail.com
+- **Email**: ppgadhe1626@gmail.com
 ---
 ```
