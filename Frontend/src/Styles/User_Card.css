@@ -1,0 +1,88 @@
+/* User Card Container */
+.chart-card {
+    height: 8vmin;
+    width: 95%;
+    background-color: #f9f9f9; /* Light gray background for a clean look */
+    display: flex;
+    align-items: center;
+    padding: 0 1vmin;
+    margin-bottom: 1.5vmin;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.chart-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    cursor: pointer;
+}
+
+/* User Icon */
+.chat-person-icon {
+    height: 5vmin;
+    width: 5vmin;
+    border: 2px solid #3498db; /* Blue border for a modern look */
+    border-radius: 50%; /* Fully rounded for a circular icon */
+    background-image: url("../assets/react.svg");
+    background-size: cover; /* Ensure the image covers the entire icon */
+    background-position: center;
+    margin-right: 1vw;
+    margin-left: 0.4vw;
+}
+
+/* Chat Name */
+.chat-name {
+    font-size: 2.5vmin;
+    font-weight: bold; /* Make the name stand out */
+    color: #2c3e50; /* Dark gray for better readability */
+}
+
+/* Last Message */
+.chat-last-message {
+    font-size: 2vmin;
+    color: #7f8c8d; /* Subtle gray for secondary text */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for long messages */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Name and Last Message Container */
+.chat-name-and-last-message {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Last Seen and Notification Container */
+.chat-last-seen-and-num-notification {
+    height: 6vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* Last Seen */
+.chat-last-seen {
+    font-size: 1.7vmin;
+    color: #95a5a6; /* Subtle gray for time text */
+    justify-self: flex-end;
+}
+
+/* Notification Badge */
+.chat-num-notification {
+    width: 2.5vmin;
+    height: 2.5vmin;
+    font-size: 1.7vmin;
+    text-align: center;
+    color: white; /* White text for contrast */
+    background-color: rgb(27, 185, 27); /* Red background for notifications */
+    border-radius: 50%; /* Fully rounded for a circular badge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold; /* Make the number stand out */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
