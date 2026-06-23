@@ -1,0 +1,60 @@
+.chatting-box {
+    max-width: 70%;
+    height: auto;
+    padding: 1.5vmin 3vmin; /* Adjust padding for better spacing */
+    margin: 0 0.3vmin;
+    background-color: #f9f9f9; /* Light gray background for a clean look */
+    z-index: 1;
+    margin: 1vmin 0; /* Add vertical spacing between messages */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensure text aligns properly */
+    justify-content: center; /* Center content vertically */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: none; /* Remove the solid black border */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+    overflow-wrap: break-word; /* Handle long text gracefully */
+    overflow: visible; /* Ensure text is not clipped */
+    position: relative; /* For positioning child elements like arrows */
+}
+
+/* Add a small arrow to indicate the sender */
+.chatting-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px; /* Adjust for left alignment */
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #f9f9f9 transparent transparent; /* Arrow pointing left */
+}
+
+/* Styling for the message time */
+.chatting-box-message-time {
+    margin-top: 0.5vmin;
+    font-size: 1.5vmin;
+    text-align: right;
+    color: #95a5a6; /* Subtle gray for time text */
+}
+
+/* Different background for sent messages */
+.chatting-box.sent {
+    background-color: #3498db; /* Blue background for sent messages */
+    color: white; /* White text for contrast */
+    align-self: flex-end; /* Align sent messages to the right */
+}
+
+.chatting-box.sent::before {
+    left: auto;
+    right: -10px; /* Adjust for right alignment */
+    border-color: transparent transparent transparent #3498db; /* Arrow pointing right */
+}
+
+/* Hover effect for messages */
+.chatting-box:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
