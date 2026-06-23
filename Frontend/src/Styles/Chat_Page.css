@@ -1,0 +1,317 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* Light background for the app */
+}
+
+/* Chat Page */
+.chat-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff; /* White background for the chat container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+}
+
+/* Sidebar Icons */
+.chat-icons {
+    width: 4vw;
+    height: 100%;
+    font-size: 4vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c3e50; /* Dark sidebar background */
+    color: #ecf0f1; /* Light icon color */
+}
+
+.chat-ham {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.chat-icon {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.chat-icon svg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #3498db; /* Hover color for icons */
+    transition: all 0.3s ease;
+}
+
+/* Chat List Section */
+.chats {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    overflow: hidden;
+    background-color: #ecf0f1; /* Light gray background for chat list */
+    border-right: 1px solid #bdc3c7; /* Subtle border */
+}
+
+.chat-heading-and-add-chat {
+    width: 100%;
+    display: flex;
+    background-color: #3498db; /* Blue header background */
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff; /* White text */
+    padding: 1vmin;
+    font-size: 1.8vmin;
+    font-weight: bold;
+}
+
+.add-chat {
+    height: 4vmin;
+    width: 4vmin;
+    border: 0.3vmin solid #ffffff;
+    border-radius: 50%;
+    margin-right: 3vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2ecc71; /* Green background for add button */
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.add-chat:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+.chat-create-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.create-chat, .chat-group-create{
+    width: 7vw;
+    border: 0.1vmin solid black;
+    border-radius: 3.5vw;
+}
+.create-chat:hover,.chat-group-create:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+/* Search Bar */
+.chat-search {
+    width: 80%;
+    height: 4vh;
+    border-radius: 2vh;
+    margin-bottom: 2vmin;
+    border: 0.3vmin solid #bdc3c7;
+    padding-left: 1vmin;
+    font-size: 1.5vmin;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.chat-search:focus {
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: 0px 0px 5px #3498db;
+}
+
+#groupName {
+    width: 80%; /* Adjust width as needed */
+    height: 4vh; /* Adjust height as needed */
+    margin: 1vmin auto; /* Add some margin for spacing */
+    padding: 0.5vmin 1vmin; /* Add padding for better spacing */
+    font-size: 1.5vmin; /* Adjust font size */
+    border: 0.2vmin solid #bdc3c7; /* Light gray border */
+    border-radius: 2vmin; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    transition: all 0.3s ease; /* Smooth transition for focus effects */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#groupName:focus {
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: 0px 0px 5px #3498db; /* Blue glow on focus */
+}
+
+/* Chat Cards */
+.chat-cards {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+    margin-left: 47px;
+}
+
+.chat-cards::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-cards::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Blue scrollbar */
+    border-radius: 4px;
+}
+
+.chat-cards::-webkit-scrollbar-track {
+    background-color: #ecf0f1; /* Light gray track */
+}
+
+/* Chat Section */
+.chat {
+    width: 76vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* White background for chat area */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+}
+
+/* Chat Header */
+.chat-head-bar {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    background-color: #3498db; /* Blue header background */
+    color: #ffffff; /* White text */
+    padding: 0 2vw;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-name {
+    font-size: 2vmin;
+    font-weight: bold;
+}
+
+.chat-status-message {
+    font-size: 1.5vmin;
+    color: #ecf0f1; /* Light gray for status */
+}
+
+.chat-info {
+    margin-left: auto;
+    font-size: 2vmin;
+    cursor: pointer;
+}
+
+.chat-drop-down {
+    background-color: #ffffff; /* White background for a clean look */
+    height: auto; /* Adjust height dynamically based on content */
+    width: 12vw; /* Slightly wider for better usability */
+    position: absolute;
+    top: 12vh;
+    right: -3vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1vmin; /* Add padding for spacing */
+    border-radius: 1vmin; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 0.1vmin solid #bdc3c7; /* Light border for separation */
+    z-index: 10; /* Ensure it appears above other elements */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.chat-drop-down button {
+    background-color: #3498db; /* Blue background for buttons */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 0.5vmin; /* Slightly rounded corners */
+    padding: 0.8vmin 1vmin; /* Add padding for better spacing */
+    margin: 0.5vmin 0; /* Add margin between buttons */
+    font-size: 1.5vmin; /* Adjust font size */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.chat-drop-down button:hover {
+    background-color: rgb(222, 4, 4); /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.chat-drop-down button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    background-color: #1e6fa1; /* Darker blue on click */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+/* Chat Messages */
+.chat-main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 2vmin;
+    background-color: #f9f9f9; /* Light gray background for messages */
+}
+
+.chat-main::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-main::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Blue scrollbar */
+    border-radius: 4px;
+}
+
+.chat-main::-webkit-scrollbar-track {
+    background-color: #ecf0f1; /* Light gray track */
+}
+
+/* Message Input Section */
+.chat-message-footer {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ecf0f1; /* Light gray background */
+    border-top: 1px solid #bdc3c7; /* Subtle border */
+}
+
+.class-message-input-box {
+    width: 65vw;
+    height: 6vh;
+    border-radius: 3vh;
+    padding-left: 2vmin;
+    border: 0.3vmin solid #bdc3c7;
+    font-size: 1.5vmin;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.class-message-input-box:focus {
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: 0px 0px 5px #3498db;
+}
+
+.chat-message-footer button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 4vmin;
+    height: 4vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chat-message-footer button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.1);
+}
